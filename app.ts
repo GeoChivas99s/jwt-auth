@@ -18,7 +18,6 @@ app.use(express.static(__dirname + "/public"));
 app.post("/register", userRegisterController.userRegister)
 // app.post("/login", )
 
-
 const port = 8000;
 app.listen(port, function () {
   console.log("Express server listening on port " + port);

@@ -11,7 +11,7 @@ const userRegister: RequestHandler = async (req, res) => {
   const { username, password } = req.body;
 
   if (!isValidUser(username, password)) {
-    res.status(400).send("Username and password are required.");
+   return res.status(400).send("Username and password are required.");
   }
 
   const hash = await bcrypt.hash(password, 12);
