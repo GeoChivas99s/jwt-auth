@@ -1,11 +1,9 @@
-import { randomUUID } from "crypto";
-
-import { RequestHandler } from "express";
-import { DATA } from "../data";
-import { API } from "../types/userData.type";
 import bcrypt from "bcrypt";
-
+import { DATA } from "../data";
+import { randomUUID } from "crypto";
 import { isValidUser } from "../utils";
+import { RequestHandler } from "express";
+import { API } from "../types/userData.type";
 
 const userRegister: RequestHandler = async (req, res) => {
   const { username, password } = req.body;
