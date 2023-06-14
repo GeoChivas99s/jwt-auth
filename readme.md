@@ -1,4 +1,4 @@
-### Documentação do Projeto de Autenticação
+## Documentação do Projeto de Autenticação
 
 
 Este é um projeto de autenticação que implementa um sistema de login e autenticação baseado em tokens usando JSON Web Tokens (JWT)
